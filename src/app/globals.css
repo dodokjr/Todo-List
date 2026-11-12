@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { --paper: 246 247 244; --card: 255 255 255; --ink: 27 42 65; --moss: 47 111 94; --accent: 224 122 79; }
+.dark { --paper: 14 19 24; --card: 23 30 37; --ink: 226 232 238; --moss: 58 148 120; --accent: 240 150 110; color-scheme: dark; }
+body { @apply bg-paper font-sans text-ink antialiased; }
+html { scroll-behavior: smooth; }
+.inp { @apply w-full rounded-lg border border-ink/20 bg-card px-3 py-2 text-ink outline-none focus:ring-2 focus:ring-moss/50; }
+.btn-lg { @apply px-6 py-3 text-base; }
+.btn { @apply rounded-lg bg-moss px-4 py-2 font-medium text-white hover:bg-moss/90 disabled:opacity-50; }
